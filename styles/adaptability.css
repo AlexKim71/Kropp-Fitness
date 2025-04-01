@@ -1,0 +1,107 @@
+
+
+@media (max-width: 1919px) {
+   
+    .motivation-card-image {
+        margin-block: -20px;
+    }
+
+    .motivation-card {
+        column-gap: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .banner-pagination {
+        margin-right: 0;  
+    }
+    .banner {
+        padding-inline: 15px;
+    }
+
+    .banner-info::before {
+        margin-right: 28px; 
+        margin-left: 9px;
+    }
+    .motivation-card-image {
+        max-width: 30%;
+        height: auto;
+        margin-block: 0;
+    }
+    .motivation-card {
+        padding-block: 50px;
+    }
+}
+
+@media (max-width: 884px) {
+    .header-menu-list {
+        display: none;
+    }
+    .header-logo {
+        padding-top: 4px;
+    }
+    .header {
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 6.25vw ;
+    }
+    .header-actions {
+        display: flex;
+        flex-direction: row-reverse; /* Инвертирует порядок */
+        column-gap: 13.02vw;
+    }
+    .motivation-card, 
+    .motivation-item:nth-child(even) .motivation-card {
+        flex-direction: column-reverse;
+    }
+    .motivation-card:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+   .motivation-card-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   }
+   .motivation-card {
+    padding-block: 30px;
+   }
+   .motivation-card-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: 60%;
+   }
+}
+
+
+@media (max-width: 410px) {
+    .header{
+        column-gap: 26px;
+    }
+    .header-menu-list {
+        display: none;
+    }
+    .header-logo {
+        margin-right: 10px;
+        padding-top: 12px;
+        width:90px;
+        height: 30px;
+    }
+    .header-actions {
+        column-gap: 15px;
+    }
+    .header-book-button{
+        width: 125px;
+        height: 32px;
+        text-align: center;
+        margin-top: 5px;
+        margin-right: 0px;
+        padding-right: 10px;
+    }
+}
+
+
+
+

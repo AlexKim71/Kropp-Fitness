@@ -1,0 +1,73 @@
+.banner {
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    justify-content: end;
+    padding: 36px 70px;
+    background-color:  var(--color-dark-alternate);
+    flex-direction: column;
+    color: var(--color-light);
+}
+
+.banner-body {
+    text-transform: uppercase;
+}
+
+.banner-info {
+    display: flex;
+    align-items: end;
+    font-weight: 700;
+    font-size: clamp(16px, 1.56vw, 30px);
+    line-height: 1.27;
+}
+
+.banner-info::before {
+    content: '';
+    width: clamp(60px, 10.1vw, 194px);
+    background: url(/source/icons/arrow-1.svg) center/contain no-repeat;
+    margin-right: 68px; 
+    margin-left: 25px;
+    aspect-ratio: 1;
+}
+
+
+.banner-title {
+    font-size: min(18.75vw, 360px);
+    line-height: 1;
+    margin: 0px 0px 22px 0px;
+}
+
+.banner-pagination {
+    margin-right: 3.125em; 
+}
+
+.banner-pagination-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+}
+
+.banner-pagination-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+}
+
+.banner-pagination-button::after {
+    content: '';
+    width: 10px;
+    aspect-ratio: 1;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.banner-pagination-button.iscurrent::after {
+    background-color: var(--color-light);
+}
+
+.banner-pagination-button:not(.iscurrent):hover::after {
+    border-color: var(--color-light-gray);
+    transition-duration: var(--transition-duration);
+}

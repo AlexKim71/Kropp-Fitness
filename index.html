@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com">
+    <meta property="og:title" content="Мой сайт | Главная страница">
+    <meta property="og:image" content="https://example.com/image.png">
+    <meta property="og:url" content="https://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=" Kropp Fitness | Main page">
+    <meta name="twitter:description" content="This is my main pages.">
+    <meta name="twitter:image" content="https://example.com/image.png">
+    <meta  name="description" content="Kropp Fitness">
+    <meta name="keywords" content="Kropp Fitness">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Alex kim">
+    <title>Kropp Fitness</title>
+    <link rel="stylesheet" href="/styles/main.css">    <!-- Основные стили -->
+    <link rel="stylesheet" href="/styles/reset.css">        <!-- Сброс стилей -->
+    <link rel="stylesheet" href="/styles/fonts.css">     <!--  Подключения шрифтов -->
+    <link rel="stylesheet" href="/styles/variables.css">    <!-- CSS-переменные -->    
+    <link rel="stylesheet" href="/styles/components/header.css"> <!-- Стили для шапки сайта -->
+    <link rel="stylesheet" href="/styles/components/banner.css"> <!-- Стили для шапки баннера 1-ой секции -->
+    <link rel="stylesheet" href="/styles/components/motivation.css"> <!-- Стили для шапки баннера 2-ой секции -->
+    <link rel="stylesheet" href="/styles/adaptability.css"> <!-- Адаптив сайта всего -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Иконка для вкладки сайта -->
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+</head>
+<body>
+    
+        <header class="header">
+                <a class="header-logo" href=" /" >
+                    <picture class="header-logo-image">
+                        <source srcset="/source/logos/header-logo-kropp.webp 2x" media="(max-width: 800px)" type="image/webp">
+                        <img srcset="/source/logos/header-logo-kropp.png 2x"  class="header-logo-image" src="/source/logos/header-logo-kropp.png" alt="Kropp Fitness" width="135" height="25px"  loading="lazy"/> 
+                    </picture>
+                </a>
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link  is-current" href=" /">Home</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href=" /">Pages</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href=" /">Portfolio</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href=" /">Blog</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href=" /">Shop</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                     <button class="header-book-button button" type="button">Book now</button>
+                     <button class="header-burger-button"  id="burger" data-micromodal-trigger="burger-menu" type="button" title="Open Menu">
+                                <span class="visually-hidden">Open menu</span><!-- для Screanreader -->
+                                <span class="header-burger-button-line"></span>
+                                <span class="header-burger-button-line"></span>
+                                <span class="header-burger-button-line"></span>
+                     </button>
+
+                     <!-- burger-menu -->
+                     <div id="burger-menu" class="modal" aria-hidden="true">
+                        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                          <div class="modal-container">
+                            <button class="modal-close" aria-label="Close menu" data-micromodal-close>✖</button>
+                            <nav>
+                              <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">PAGES</a></li>
+                                <li><a href="#">PORTFOLIO</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">SHOP</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                 
+                        <!-- burger-menu -->
+                </div>
+        </header>
+        <main>
+            <h1 class="visually-hidden">Kropp Fitness Club</h1>
+            <section class="banner">
+                <h2 class="visually-hidden">Upcoming events</h2>
+                <div class="banner-body">
+                    <div class="banner-info">
+                        New event<br/>
+                        coming up&nbsp;/&nbsp;<time datetime="06-07">june&nbsp;7</time>&nbsp;-&nbsp;<time datetime="06-13">13</time>
+                    </div>
+                    <h3 class="banner-title">Crossfit</h3>
+                </div>
+                <div class="banner-pagination">
+                    <ul class="banner-pagination-list">
+                        <li class="banner-pagination-item">
+                            <button class = 'banner-pagination-button' type="button"></button>
+                        </li>
+                        <li class="banner-pagination-item">
+                            <button class = 'banner-pagination-button' type="button"></button>
+                        </li>
+                        <li class="banner-pagination-item">
+                            <button class = 'banner-pagination-button iscurrent' type="button"></button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="motivation">
+                <ul class="motivation-list">
+                    <li class="motivation-item">
+                        <div class="motivation-card container">
+                            <div class="motivation-card-body">
+                                <div class="motivation-card-title backdrop-title title-medium" data-title="Strong">
+                                    Be you, just stronger!<br/>
+                                    Power is in you
+                                </div>
+                                <div class="motivation-card-description description">
+                                    <p>Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota.</p>
+                                </div>
+                                <button class="motivation-card-button button transparent" href="/">View more</button>
+                            </div>
+                            <div class="motivation-card-image">
+                                <picture>
+                                    <source srcset="/source/images/h1-img-1.webp 2x" media="(max-width: 800px)" type="image/webp">
+                                    <img srcset="/source/images/h1-img-1.jpg 2x" alt="man doing pull-ups on horizontal bar" width="518" height="760" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="motivation-item">
+                        <div class="motivation-card container">
+                            <div class="motivation-card-body">
+                                <div class="motivation-card-title backdrop-title title-medium" data-title="Start">
+                                    Today is the best<br/>
+                                     day to start!
+                                </div>
+                                <div class="motivation-card-description description">
+                                    <p>Sed abhorreant constituam consectetuer eu. At mei clita deserunt, his movet molestie nemore.</p>
+                                </div>
+                                <button class="motivation-card-button button transparent" href="/">View more</button>
+                            </div>
+                            <div class="motivation-card-image">
+                                <picture>
+                                    <source srcset="/source/images/h1-img-2.webp 2x" media="(max-width: 800px)" type="image/webp">
+                                    <img srcset="/source/images/h1-img-2.png 2x" alt="man with dumbls" width="518" height="760" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+       
+
+        <script src="/script.js"></script>
+</body>
+</html>
