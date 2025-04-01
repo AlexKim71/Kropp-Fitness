@@ -1,2 +1,13 @@
-// document.createElement("canvas").toDataURL("image/webp").indexOf("data:image/webp") == 0
-console.log(document.createElement("canvas").toDataURL("image/webp").indexOf("data:image/webp") == 0)
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    MicroModal.init({
+      openClass: "is-open",
+      disableScroll: true,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true,
+    });
+  });
+  
+
+
